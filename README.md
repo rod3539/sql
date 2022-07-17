@@ -58,5 +58,27 @@ SQL문제를 풀기 위해서 알아야 할 가장 기초적인 지식들을 정
 
     ```
     SELECT * FROM CUSTOMERS
-    WHERE COUNTRY IN 
+    WHERE COUNTRY IN ('UK', 'KOREA') // CUSTOMER 중 COUNTRY가 UK이거나 KOREA인 것 다 뽑기
+    ```
+
+### BETWEEN
+* WHERE절 내 검색 조건으로 범위를 지정하고자 할 때 사용
+* BETWEEN과 AND 사이에 들어 가는 값은 ~이상, ~이하이다
+
+    ```
+    SELECT * FROM PRODUCTS
+    WHERE PRICE BETWEEN 10 AND 20;
+
+    SELECT * FROM PRODUCTS
+    WHERE PRICE NOT BETWEEN 10 AND 20;
+
+    SELECT * FROM PRODUCTS
+    WHERE (PRICE BETWEEN 10 AND 20) AND NOT ID IN (2, 3); // 이렇게도 쓸 수 있다.
+    ```
+
+### NULL의 처리
+* IFNULL 사용
+
+    ```
+    SELECT ANIMAL_TYPE, IFNULL(NAME,'NO NAME')
     ```
