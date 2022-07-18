@@ -87,3 +87,11 @@ SQL문제를 풀기 위해서 알아야 할 가장 기초적인 지식들을 정
     ```
     SELECT ANIMAL_TYPE, IFNULL(NAME,'NO NAME')
     ```
+
+### DISTINCT
+    중복 데이터를 제거하려면 DISTINCT 키워드를 붙인다.
+
+### GROUP BY
+    ```
+    SELECT 컬럼 FROM 테이블 GROUP BY 그룹화할 컬럼;
+    ```
