@@ -35,6 +35,11 @@ SQL문제를 풀기 위해서 알아야 할 가장 기초적인 지식들을 정
     SELECT * FROM 테이블
     ORDER BY ID
     ```
+    
+    ```
+    오름차순: ASC
+    ```
+
     ```
     역순 배열
     SELECT * FROM 테이블
